@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>���������� �����</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>���������� �����</h1>
+    <p id="context"></p>
+    <form id="leadForm">
+      <div class="field">
+        <label>���</label>
+        <input type="text" name="name" placeholder="���� ������" required />
+      </div>
+      <div class="field">
+        <label>�������</label>
+        <input type="tel" name="phone" placeholder="+7 900 000-00-00" required />
+      </div>
+      <div class="field">
+        <label>�����������</label>
+        <textarea name="comment" placeholder="������� ����� ������ � �.�."></textarea>
+      </div>
+      <button type="submit" class="primary">��������� ������</button>
+    </form>
+    <div id="status" class="status"></div>
+  </div>
+  <script src="./main.js"></script>
+</body>
+</html>
