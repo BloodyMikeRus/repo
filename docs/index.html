@@ -3,28 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>���������� �����</title>
+  <title>Оформление карты</title>
   <link rel="stylesheet" href="./styles.css" />
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
 </head>
 <body>
   <div class="container">
-    <h1>���������� �����</h1>
+    <h1>Оформление карты</h1>
     <p id="context"></p>
     <form id="leadForm">
       <div class="field">
-        <label>���</label>
-        <input type="text" name="name" placeholder="���� ������" required />
+        <label>Имя</label>
+        <input type="text" name="name" placeholder="Иван Иванов" required />
       </div>
       <div class="field">
-        <label>�������</label>
+        <label>Телефон</label>
         <input type="tel" name="phone" placeholder="+7 900 000-00-00" required />
       </div>
       <div class="field">
-        <label>�����������</label>
-        <textarea name="comment" placeholder="������� ����� ������ � �.�."></textarea>
+        <label>Комментарий</label>
+        <textarea name="comment" placeholder="Удобное время звонка и т.п."></textarea>
       </div>
-      <button type="submit" class="primary">��������� ������</button>
+      <button type="submit" class="primary">Отправить заявку</button>
     </form>
     <div id="status" class="status"></div>
   </div>

@@ -11,6 +11,17 @@
     tg.expand();
     tg.MainButton.hide();
     tg.ready && tg.ready();
+    // Применяем тему Telegram к CSS-переменным, если есть
+    try {
+      const bg = tg.themeParams?.bg_color;
+      const text = tg.themeParams?.text_color;
+      const hint = tg.themeParams?.hint_color;
+      const button = tg.themeParams?.button_color;
+      if (bg) document.documentElement.style.setProperty('--bg', bg);
+      if (text) document.documentElement.style.setProperty('--text', text);
+      if (hint) document.documentElement.style.setProperty('--muted', hint);
+      if (button) document.documentElement.style.setProperty('--accent', button);
+    } catch (_) {}
   }
 
   const form = document.getElementById('leadForm');
